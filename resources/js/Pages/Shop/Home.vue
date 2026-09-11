@@ -4,6 +4,7 @@ import { route } from 'ziggy-js';
 import ShopLayout from '@/Layouts/ShopLayout.vue';
 import ProductCard from '@/Components/ProductCard.vue';
 import InstaFeed from '@/Components/InstaFeed.vue';
+import Lookbook from '@/Components/Lookbook.vue';
 import type { InstaPost, Product } from '@/types';
 
 defineOptions({ layout: ShopLayout });
@@ -190,6 +191,9 @@ const guarantees = [
             <ProductCard v-for="product in newArrivals" :key="product.id" :product="product" />
         </div>
     </section>
+
+    <!-- Lookbook vidéo -->
+    <Lookbook />
 
     <!-- Instagram -->
     <InstaFeed v-if="instagramPosts?.length" :posts="instagramPosts" />
