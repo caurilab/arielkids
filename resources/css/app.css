@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+@theme {
+    --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Fredoka', 'Quicksand', ui-sans-serif, sans-serif;
+
+    /* Corail rosé — couleur principale (boutons, accents) */
+    --color-brand-50: #fef2f6;
+    --color-brand-100: #fde6ee;
+    --color-brand-200: #fbccdd;
+    --color-brand-300: #f8a3c0;
+    --color-brand-400: #f4749e;
+    --color-brand-500: #ee4e80;
+    --color-brand-600: #d92f66;
+    --color-brand-700: #b61f50;
+    --color-brand-800: #951d44;
+    --color-brand-900: #7d1c3b;
+
+    /* Encre marine — textes et titres */
+    --color-ink-50: #f4f6fb;
+    --color-ink-100: #e8ecf6;
+    --color-ink-200: #cbd5ea;
+    --color-ink-300: #9db0d6;
+    --color-ink-400: #6886be;
+    --color-ink-500: #4667a6;
+    --color-ink-600: #35518b;
+    --color-ink-700: #2c4271;
+    --color-ink-800: #283a5e;
+    --color-ink-900: #232f55;
+    --color-ink-950: #161d38;
+
+    /* Soleil — accent chaud */
+    --color-sun-300: #ffd973;
+    --color-sun-400: #ffc53d;
+    --color-sun-500: #f5a623;
+
+    /* Pastels d'ambiance */
+    --color-mint-100: #e4f7f0;
+    --color-mint-300: #9fe6d2;
+    --color-mint-500: #41c9a7;
+    --color-sky-100: #e8f4fc;
+    --color-sky-300: #b3dcf5;
+    --color-peach-100: #fff1e3;
+    --color-peach-300: #ffd9ae;
+    --color-lav-100: #f1ecfb;
+    --color-lav-300: #d4c5f3;
+    --color-blush-100: #fdebf1;
+
+    --radius-4xl: 2rem;
+
+    --animate-float: float 6s ease-in-out infinite;
+    --animate-float-slow: float 9s ease-in-out infinite;
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-12px); }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-white text-ink-900;
+}
+
+::selection {
+    @apply bg-brand-200 text-ink-900;
+}
+
+/* Barre de défilement discrète */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-ink-200;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-300;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
