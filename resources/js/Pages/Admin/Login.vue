@@ -15,7 +15,7 @@ function submit() {
 <template>
     <Head title="Connexion admin" />
 
-    <div class="flex min-h-screen items-center justify-center bg-gradient-to-br from-blush-100 via-peach-100 to-lav-100 px-4">
+    <div class="flex min-h-screen items-center justify-center bg-gradient-to-br from-azure-100 via-mint-100 to-peach-100 px-4">
         <div class="w-full max-w-md rounded-[2rem] bg-white p-8 shadow-2xl shadow-brand-500/10">
             <div class="text-center">
                 <img src="/images/brand/logo-black.png" alt="Ariel Kids" class="mx-auto h-20 w-auto" />

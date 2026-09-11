@@ -69,7 +69,7 @@ watch(form, applyFilters);
             <span class="text-ink-800">{{ category.name }}</span>
         </nav>
 
-        <header class="mb-8 rounded-3xl bg-blush-100 px-6 py-8">
+        <header class="mb-8 rounded-3xl bg-azure-100 px-6 py-8">
             <h1 class="font-display text-3xl font-semibold text-ink-900 sm:text-4xl">{{ category.name }}</h1>
             <p class="mt-1 font-medium text-ink-500">{{ products.total }} article{{ products.total > 1 ? 's' : '' }}</p>
         </header>

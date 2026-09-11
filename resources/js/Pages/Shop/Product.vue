@@ -53,7 +53,7 @@ function addToCart() {
         <div class="grid gap-10 lg:grid-cols-2">
             <!-- Galerie -->
             <div>
-                <div class="overflow-hidden rounded-[2rem] bg-blush-100">
+                <div class="overflow-hidden rounded-[2rem] bg-azure-100">
                     <img
                         v-if="product.media[activeImage]"
                         :src="product.media[activeImage].url"

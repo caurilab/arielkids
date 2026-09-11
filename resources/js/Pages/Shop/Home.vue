@@ -24,26 +24,26 @@ const audienceBg: Record<string, string> = {
 };
 
 const guarantees = [
-    { icon: '👕', title: 'Qualité premium', text: 'Matières douces, saines et durables' },
-    { icon: '🛡️', title: 'Pensé pour les enfants', text: 'Articles testés et certifiés' },
-    { icon: '🚚', title: 'Livraison rapide', text: 'Abidjan et toute la Côte d\'Ivoire' },
-    { icon: '🏷️', title: 'Prix justes', text: 'Le meilleur rapport qualité-prix' },
+    { icon: '👕', title: 'Qualité premium', text: 'Matières douces, saines et durables', bg: 'bg-azure-100' },
+    { icon: '🛡️', title: 'Pensé pour les enfants', text: 'Articles testés et certifiés', bg: 'bg-mint-100' },
+    { icon: '🚚', title: 'Livraison rapide', text: 'Abidjan et toute la Côte d\'Ivoire', bg: 'bg-peach-100' },
+    { icon: '🏷️', title: 'Prix justes', text: 'Le meilleur rapport qualité-prix', bg: 'bg-lav-100' },
 ];
 </script>
 
 <template>
     <!-- Hero -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-blush-100 via-peach-100 to-lav-100">
-        <div class="pointer-events-none absolute -left-16 top-10 h-48 w-48 animate-float rounded-full bg-brand-200/50 blur-2xl" />
+    <section class="relative overflow-hidden bg-gradient-to-br from-azure-100 via-peach-100 to-mint-100">
+        <div class="pointer-events-none absolute -left-16 top-10 h-48 w-48 animate-float rounded-full bg-azure-300/40 blur-2xl" />
         <div class="pointer-events-none absolute -right-10 bottom-6 h-56 w-56 animate-float-slow rounded-full bg-sky-300/40 blur-2xl" />
 
         <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 lg:grid-cols-2 lg:py-20">
             <div class="relative text-center lg:text-left">
-                <span class="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-600">
+                <span class="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-azure-700">
                     ♥ Qualité premium pour les petits
                 </span>
                 <h1 class="mt-5 font-display text-4xl font-semibold leading-tight text-ink-900 sm:text-5xl lg:text-6xl">
-                    Le style de vos <span class="text-brand-500">enfants</span>,<br />
+                    Le style de vos <span class="text-azure-500">enfants</span>,<br />
                     notre affaire.
                 </h1>
                 <p class="mx-auto mt-5 max-w-md text-lg font-medium text-ink-500 lg:mx-0">
@@ -68,7 +68,7 @@ const guarantees = [
             </div>
 
             <div class="relative mx-auto w-full max-w-md">
-                <div class="animate-float overflow-hidden rounded-[2.5rem] bg-white p-3 shadow-2xl shadow-brand-500/20">
+                <div class="animate-float overflow-hidden rounded-[2.5rem] bg-white p-3 shadow-2xl shadow-azure-500/20">
                     <img
                         v-if="audiences[0]?.image"
                         :src="audiences[0].image"
@@ -92,7 +92,7 @@ const guarantees = [
                 :key="g.title"
                 class="flex items-center gap-4 rounded-3xl border border-ink-100 bg-white p-5"
             >
-                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blush-100 text-2xl">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-2xl" :class="g.bg">
                     {{ g.icon }}
                 </span>
                 <div>
@@ -142,7 +142,7 @@ const guarantees = [
                 <h2 class="font-display text-3xl font-semibold text-ink-900">Nos coups de cœur</h2>
                 <p class="mt-1 font-medium text-ink-400">La sélection du moment, enfants d'abord</p>
             </div>
-            <span class="hidden rounded-full bg-brand-100 px-4 py-1.5 text-sm font-bold text-brand-700 sm:inline">
+            <span class="hidden rounded-full bg-sun-400/20 px-4 py-1.5 text-sm font-bold text-sun-500 sm:inline">
                 Meilleures ventes
             </span>
         </div>

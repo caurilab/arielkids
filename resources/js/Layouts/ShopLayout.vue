@@ -24,7 +24,7 @@ const year = new Date().getFullYear();
 
     <div class="flex min-h-screen flex-col bg-white">
         <!-- Barre d'annonce -->
-        <div class="bg-brand-500 text-white">
+        <div class="bg-azure-500 text-white">
             <div class="mx-auto flex max-w-7xl items-center justify-center gap-6 px-4 py-2 text-xs font-semibold tracking-wide">
                 <span class="hidden sm:inline">🚚 Livraison rapide à Abidjan</span>
                 <span class="hidden md:inline">↩️ Retours faciles sous 30 jours</span>
@@ -132,7 +132,7 @@ const year = new Date().getFullYear();
                         <div v-for="cat in categories" :key="cat.id" class="mb-2">
                             <Link
                                 :href="route('category.show', cat.slug)"
-                                class="block rounded-xl bg-blush-100 px-4 py-3 font-display font-semibold text-ink-900"
+                                class="block rounded-xl bg-azure-100 px-4 py-3 font-display font-semibold text-ink-900"
                                 @click="mobileOpen = false"
                             >
                                 {{ cat.name }}
