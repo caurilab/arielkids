@@ -4,17 +4,23 @@
     --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
     --font-display: 'Fredoka', 'Quicksand', ui-sans-serif, sans-serif;
 
-    /* Corail rosé — couleur principale (boutons, accents) */
-    --color-brand-50: #fef2f6;
-    --color-brand-100: #fde6ee;
-    --color-brand-200: #fbccdd;
-    --color-brand-300: #f8a3c0;
-    --color-brand-400: #f4749e;
-    --color-brand-500: #ee4e80;
-    --color-brand-600: #d92f66;
-    --color-brand-700: #b61f50;
-    --color-brand-800: #951d44;
-    --color-brand-900: #7d1c3b;
+    /* Magenta du logo — couleur principale (boutons, accents) */
+    --color-brand-50: #fdeef6;
+    --color-brand-100: #fbd9eb;
+    --color-brand-200: #f6b3d8;
+    --color-brand-300: #ef85be;
+    --color-brand-400: #e94fa2;
+    --color-brand-500: #e6188b;
+    --color-brand-600: #c90e77;
+    --color-brand-700: #a50c61;
+    --color-brand-800: #860c4f;
+    --color-brand-900: #6c0d42;
+
+    /* Bleu sac du logo — accent secondaire */
+    --color-azure-100: #e0f2fb;
+    --color-azure-300: #8ed0f2;
+    --color-azure-500: #0d8bd2;
+    --color-azure-700: #0a6aa5;
 
     /* Encre marine — textes et titres */
     --color-ink-50: #f4f6fb;

@@ -1,7 +1,7 @@
-import { route } from 'ziggy-js';
+import { route as ziggyRoute } from 'ziggy-js';
 
 declare global {
-    const route: typeof route;
+    const route: typeof ziggyRoute;
 }
 
 export {};

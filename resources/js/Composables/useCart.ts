@@ -1,4 +1,5 @@
 import { router, usePage } from '@inertiajs/vue3';
+import { route } from 'ziggy-js';
 import { computed } from 'vue';
 import type { Cart, SharedProps } from '@/types';
 

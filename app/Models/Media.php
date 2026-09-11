@@ -29,6 +29,15 @@ class Media extends Model
         return $this->belongsTo(Product::class);
     }
 
+    protected static function booted(): void
+    {
+        static::deleting(function (Media $media) {
+            if (! str_starts_with($media->path, 'http')) {
+                Storage::disk('public')->delete($media->path);
+            }
+        });
+    }
+
     public function url(): string
     {
         return str_starts_with($this->path, 'http')
